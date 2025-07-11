@@ -16,10 +16,9 @@ h1 {
     margin-bottom: 30px;
 }
 
-/* Cocktail Name */
 h2 {
     font-size: 28px;
-    color: #007bff;
+    color: #333333; /* Dark Charcoal */
     margin-bottom: 10px;
 }
 
