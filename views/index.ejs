@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cocktails</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Learn about cocktails!</h1>
+    <div class="container">
+        <div class="left">
+            <h2><%= name%></h2>
+            <%if(ingr && ingr.length > 0){%>
+                <h3>Ingredients</h3>
+                <ul>
+                <% for(i=0;i<ingr.length;i++){%>
+                    <li><%= ingr[i]%></li>
+                <% } %>
+                </ul>
+            <% } %>
+        </div>
+        <% if(image){ %>
+            <div class="right">
+                <img src="<%=image%>" alt="Cocktail" width="300" />
+            </div>
+        <% } %>
+    </div>
+    <div class="actions">
+        <form action="/" method="GET">
+            <button type="submit">Next</button>
+        </form>
+    </div>
+</body>
+</html>
